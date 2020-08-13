@@ -1,7 +1,7 @@
 {
-  "name": "snarkdown",
+  "name": "@marcisbee/snarkdown",
   "description": "Transform Markdown into HTML.",
-  "version": "1.2.2",
+  "version": "1.3.0",
   "main": "dist/snarkdown.js",
   "module": "dist/snarkdown.es.js",
   "umd:main": "dist/snarkdown.umd.js",
@@ -14,14 +14,16 @@
     "release": "npm run -s build && npm test && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
   },
   "authors": [
-    "Jason Miller <jason@developit.ca>"
+    "Jason Miller <jason@developit.ca>",
+    "Marcis Bergmanis <marcisbergmanis@gmail.com>"
   ],
   "files": [
     "src",
-    "dist"
+    "dist",
+    "snarkdown.d.ts"
   ],
-  "homepage": "https://github.com/developit/snarkdown",
-  "repository": "developit/snarkdown",
+  "homepage": "https://github.com/marcisbee/snarkdown",
+  "repository": "marcisbee/snarkdown",
   "license": "MIT",
   "keywords": [
     "markdown",
@@ -37,8 +39,8 @@
     "babel-register": "^6.23.0",
     "chai": "^3.5.0",
     "eslint": "^3.16.1",
-    "microbundle": "^0.4.4",
-    "mocha": "^5.1.1"
+    "microbundle": "^0.12.3",
+    "mocha": "^5.2.0"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
@@ -58,7 +60,10 @@
       "no-console": 1,
       "no-cond-assign": 0,
       "no-regex-spaces": 0,
-      "semi": [2, "always"]
+      "semi": [
+        2,
+        "always"
+      ]
     }
   }
 }
