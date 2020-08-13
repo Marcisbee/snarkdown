@@ -1,5 +1,5 @@
 {
-  "name": "@marcisbee/snarkdown",
+  "name": "snarkdown-plus",
   "description": "Transform Markdown into HTML.",
   "version": "1.3.0",
   "main": "dist/snarkdown.js",
